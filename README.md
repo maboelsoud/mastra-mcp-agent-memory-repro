@@ -1,6 +1,6 @@
 # Mastra `MCPServer.agents`: the generated `ask_<key>` tool runs the agent without memory
 
-Minimal reproduction for a Mastra issue. An agent configured with `memory: new Memory()`
+Minimal reproduction for [mastra-ai/mastra#29673](https://github.com/mastra-ai/mastra/issues/29673). An agent configured with `memory: new Memory()`
 and exposed through `MCPServer({ agents: { probe } })` forgets everything between two
 `ask_probe` calls: the generated tool calls `agent.generate(message, …)` without a thread
 or resource id, and nothing sets `MASTRA_THREAD_ID_KEY` / `MASTRA_RESOURCE_ID_KEY` on the
