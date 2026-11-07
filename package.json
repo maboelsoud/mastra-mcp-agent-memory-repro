@@ -1,0 +1,23 @@
+{
+  "name": "mastra-mcp-agent-memory-repro",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal reproduction: an agent with Memory exposed via MCPServer `agents` (ask_<key>) runs without memory",
+  "scripts": {
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@mastra/core": "1.82.0",
+    "@mastra/libsql": "1.29.0",
+    "@mastra/mcp": "2.8.0",
+    "@mastra/memory": "1.41.0",
+    "zod": "^4.2.0"
+  },
+  "devDependencies": {
+    "@ai-sdk/provider": "3.0.19",
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
